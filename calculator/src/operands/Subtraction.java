@@ -1,7 +1,5 @@
 package operands;
 
-import operands.Operand;
-
 public class Subtraction implements Operand {
 
     @Override
