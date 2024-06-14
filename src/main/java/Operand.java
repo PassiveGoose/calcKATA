@@ -1,6 +1,4 @@
-package operands;
-
-public interface Operand {
+interface Operand {
 
     int executeOperation(int firstValue, int secondValue) throws Exception;
 }

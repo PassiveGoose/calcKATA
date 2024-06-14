@@ -1,6 +1,4 @@
-package operands;
-
-public class Subtraction implements Operand {
+class Subtraction implements Operand {
 
     @Override
     public int executeOperation(int firstValue, int secondValue) {

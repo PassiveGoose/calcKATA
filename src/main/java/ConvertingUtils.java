@@ -1,11 +1,9 @@
-package utils;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConvertingUtils {
+class ConvertingUtils {
 
     private static final Map<Character, Integer> ROMAN_INT_MAP = new HashMap<>();
     private static final Map<Integer, String> INT_ROMAN_MAP = new HashMap<>();

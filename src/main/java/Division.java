@@ -1,6 +1,4 @@
-package operands;
-
-public class Division implements Operand {
+class Division implements Operand {
 
     @Override
     public int executeOperation(int firstValue, int secondValue) throws Exception{
