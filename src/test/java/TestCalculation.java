@@ -51,6 +51,12 @@ public class TestCalculation {
         testException(input);
     }
 
+    @Test
+    public void testWrongRomanResult() {
+        String input = "I - V";
+        testException(input);
+    }
+
     private void testNormal(String input, String expected) {
         try {
             String result = Main.calc(input);

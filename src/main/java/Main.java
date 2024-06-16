@@ -38,9 +38,12 @@ public class Main {
         return Integer.parseInt(input);
     }
 
-    private static String parseResult(int result) {
+    private static String parseResult(int result) throws Exception {
         if (isRoman) {
-            return ConvertingUtils.intToRoman(result);
+            if (result > 0) {
+                return ConvertingUtils.intToRoman(result);
+            }
+            throw new Exception();
         }
         return Integer.toString(result);
     }
