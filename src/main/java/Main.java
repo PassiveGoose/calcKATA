@@ -14,8 +14,8 @@ public class Main {
         String[] rawData = input.split("\\s");
         if (!validateInput(rawData)) throw new Exception();
 
-        int firstValue = parseInteger(rawData[0]);
-        int secondValue = parseInteger(rawData[2]);
+        int firstValue = parseValue(rawData[0]);
+        int secondValue = parseValue(rawData[2]);
         Operand operand = parseOperand(rawData[1]);
 
         return parseResult(operand.executeOperation(firstValue, secondValue));
@@ -31,7 +31,7 @@ public class Main {
         return true;
     }
 
-    private static int parseInteger(String input) throws Exception{
+    private static int parseValue(String input) throws Exception{
         if (isRoman) {
             return ConvertingUtils.romanToInt(input);
         }
